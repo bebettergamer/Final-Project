@@ -1,116 +1,114 @@
 * {
-    margin: 5px;
-    /*   padding: 0px 0px; */
-    /*   box-sizing: border-box; */
-    font-family: "Quattrocento Sans", sans-serif;
-    font-size: 20px;
+  margin: 5px;
+  /*   padding: 0px 0px; */
+  /*   box-sizing: border-box; */
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  margin: 5px;
+  font-family: "Playfair Display", serif;
+  font-size: 49px;
+}
+
+h2 {
+  margin: 5px;
+  font-family: "Playfair Display", serif;
+  font-size: 59px;
+}
+
+/* Body */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+hr {
+  border: 1px solid purple;
+}
+
+/* Hero */
+
+.hero-wrapper {
+  /*     border: solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  /*   border: solid orange; */
+  display: flex;
+  animation: skew 2.5s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
   }
-  
-  h1 {
-    margin: 5px;
-    font-family: "Playfair Display", serif;
-    font-size: 49px;
+  100% {
+    transform: skewX(-20deg);
   }
-  
-  h2 {
-    margin: 5px;
-    font-family: "Playfair Display", serif;
-    font-size: 59px;
-  }
-  
-  /* Body */
-  
-  section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-  }
-  
-  hr {
-    border: 1px solid black;
-  }
-  
-  /* Hero */
-  
-  .hero-wrapper {
-    /*     border: solid blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  
-  .logo {
-    /*   border: solid orange; */
-    display: flex;
-    animation: skew 2.5s infinite;
-    transform: skew(20deg);
-    animation-direction: alternate;
-  }
-  
-  @keyframes skew {
-    0% {
-      transform: skewX(20deg);
-    }
-    100% {
-      transform: skewX(-20deg);
-    }
-  }
-  
-  /* Header */
-  
-  /* .nav-wrapper {
+}
+
+/* Header */
+
+/* .nav-wrapper {
     /*     border: solid orange; */
-    /*   display: flex;
+/*   display: flex;
     align-items: center;
     justify-content: space-around; */
-  /
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*   padding: 0px 500px; */
+
+  margin: 0px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #ba55d3;
+}
+
+/* Hamburger icon */
+
+.nav .icon {
+  visibility: hidden;
+  /*   border: solid blueviolet; */
+}
+
+@media only screen and (max-width: 600px) {
   .nav {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /*   padding: 0px 500px; */
-  
-    margin: 0px;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .nav a:hover {
-    color: #ba55d3;
-  }
-  
-  /* Hamburger icon */
-  
-  .nav .icon {
     visibility: hidden;
-    /*   border: solid blueviolet; */
+    display: flex-start;
   }
-  
-  @media only screen and (max-width: 600px) {
-    .nav {
-      visibility: hidden;
-      display: flex-start;
-    }
-    .nav .icon {
-      visibility: visible;
-    }
-      body {
-      background-color: red;
-    }
+  .nav .icon {
+    visibility: visible;
   }
-  
-  /* @media screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
     .nav .responsive {
       position: relative;
     }
@@ -125,120 +123,119 @@
       text-align: left;
     }
   } */
-  
-  /* Plants Section */
-  
-  .plants-section {
-    display: flex;
-    background-image: url(https://img.rasset.ie/0015687a-1600.jpg),
-      linear-gradient(#151321, #2c2a44);
-    background-blend-mode: overlay;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .plants-section-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-  }
-  
-  /* Arts Section */
-  
-  .arts-section {
-    display: flex;
-    background-image: url(https://www.pictureframesexpress.co.uk/blog/wp-content/uploads/2020/05/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg),
-      linear-gradient(#151321, #2c2a44);
-    background-blend-mode: overlay;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .arts-section-text {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-  }
-  
-  /* Personal Section */
-  
-  .personal-section-container {
-    display: flex;
-    background-image: url(https://media.vogue.in/wp-content/uploads/2019/12/Libra-1920x1080.jpg),
-      linear-gradient(#151321, #2c2a44);
-    background-blend-mode: overlay;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .personal-section-overlay {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-  }
-  
-  /* Tarot Section */
-  
-  .tarot-section {
-    display: flex;
-    background-image: url(https://cdn3.volusion.com/nqacx.ymjpq/v/vspfiles/photos/CardsRiderWaite-2.jpg?v-cache=1601129171),
-      linear-gradient(#151321, #2c2a44);
-    background-blend-mode: overlay;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .tarot-section-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-  }
-  
-  /* Footer */
-  
-  footer {
-    display: flex;
-    justify-content: center;
-    height: 150px;
-    /*   border: solid red; */
-  }
-  
-  .follow-me {
-    display: flex;
-    align-items: center;
-  }
-  
-  .copyright {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* .instagram-logo-container,
+
+/* Plants Section */
+
+.plants-section {
+  display: flex;
+  background-image: url(https://img.rasset.ie/0015687a-1600.jpg),
+    linear-gradient(#151321, #2c2a44);
+  background-blend-mode: overlay;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.plants-section-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Arts Section */
+
+.arts-section {
+  display: flex;
+  background-image: url(https://www.pictureframesexpress.co.uk/blog/wp-content/uploads/2020/05/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg),
+    linear-gradient(#151321, #2c2a44);
+  background-blend-mode: overlay;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.arts-section-text {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Personal Section */
+
+.personal-section-container {
+  display: flex;
+  background-image: url(https://media.vogue.in/wp-content/uploads/2019/12/Libra-1920x1080.jpg),
+    linear-gradient(#151321, #2c2a44);
+  background-blend-mode: overlay;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.personal-section-overlay {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Tarot Section */
+
+.tarot-section {
+  display: flex;
+  background-image: url(https://cdn3.volusion.com/nqacx.ymjpq/v/vspfiles/photos/CardsRiderWaite-2.jpg?v-cache=1601129171),
+    linear-gradient(#151321, #2c2a44);
+  background-blend-mode: overlay;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tarot-section-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  border: solid red;
+}
+
+.follow-me {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.instagram-logo-container,
   .twitter-logo-container {
-    /*   border: solid purple; */
-    /*   display: flex;
-    justify-content: center;
-    align-items: center; */
-   /
-  
-  img {
-    max-width: 100%;
-    max-height: 100%;
+  border: solid purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
-  
-  /* a {
+ 
+img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+/* a {
     border: solid greenyellow;
   } */
-  
