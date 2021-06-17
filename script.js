@@ -4,6 +4,7 @@ function fadeOnScroll(element) {
   if (!element) {
     return;
   }
+  
 
   var element = document.getElementById("section");
   var element2 = document.getElementById("section-two");
@@ -33,5 +34,9 @@ function fadeOnScroll(element) {
   }
 }
 
-window.addEventListener("scroll", fadeOnScroll)
+window.addEventListener("scroll", fadeOnScroll);{
 
+if (typeof window === 'undefined') {
+  global.window = {}
+}
+}
