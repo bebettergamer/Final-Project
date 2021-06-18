@@ -1,11 +1,21 @@
+// function sanityCheck(){
+//   console.log("sanitycheck"); 
+// sanityCheck();}
+
+
 // Fade On Scroll
 
-function fadeOnScroll(element) {
-  if (!element) {
-    return;
-  }
-  
 
+
+function fadeOnScroll(element) {
+  if (typeof window === 'undefined') {
+    window = {}
+  }
+  // if (!element) {
+  //   return;
+  // }
+  
+  // var window = global.window
   var element = document.getElementById("section");
   var element2 = document.getElementById("section-two");
   var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
@@ -34,9 +44,4 @@ function fadeOnScroll(element) {
   }
 }
 
-window.addEventListener("scroll", fadeOnScroll);{
-
-if (typeof window === 'undefined') {
-  global.window = {}
-}
-}
+window.addEventListener("scroll", fadeOnScroll);
