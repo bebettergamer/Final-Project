@@ -34,7 +34,7 @@ hr {
 /* Hero */
 
 .hero-wrapper {
-      /* border: solid blue; */
+  /* border: solid blue; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,20 +84,16 @@ hr {
   color: #ba55d3;
 }
 
-
 /* Hamburger icon */
 
-
-
 .nav .icon {
-    visibility: hidden;
-    /* border: solid blueviolet; */
+  visibility: hidden;
+  /* border: solid blueviolet; */
 }
 
 @media only screen and (max-width: 411px) {
   .hero-title {
     font-size: 16px;
-
   }
 
   .test {
@@ -110,7 +106,6 @@ hr {
     justify-content: flex-start;
   }
 
-  
   .nav {
     visibility: hidden;
   }
@@ -121,12 +116,7 @@ hr {
     top: 35px;
     right: 30px;
   }
-  
-  
 }
-
-  
-
 
 /* Plants Section */
 
@@ -228,13 +218,13 @@ footer {
 }
 
 .instagram-logo-container,
-  .twitter-logo-container {
+.twitter-logo-container {
   /* border: solid purple; */
   display: flex;
   justify-content: center;
   align-items: center;
-  }
- 
+}
+
 .twitter-logo {
   height: 100px;
   width: 100px;
@@ -244,4 +234,3 @@ footer {
   height: 100px;
   width: 100px;
 }
-
