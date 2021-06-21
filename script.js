@@ -1,4 +1,11 @@
 // Fade On Scroll
+// if (typeof window !== "undefined") {
+//   window.onload = function () {
+//   };
+// document.addEventListener("DOMContentLoaded", function() {
+//   // code...
+
+
 
 function fadeOnScroll(element) {
   var element = document.getElementById("section");
@@ -28,8 +35,11 @@ function fadeOnScroll(element) {
   }
 }
 
+
 window.addEventListener("scroll", fadeOnScroll);
 
+
+// Hamburger menu
 function myFunction() {
   var x = document.getElementById("nav-menu");
   if (x.className === "nav") {
@@ -62,3 +72,4 @@ function myFunction() {
 //   });
 // })
 
+// }); 
